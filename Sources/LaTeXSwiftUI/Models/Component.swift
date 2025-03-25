@@ -86,8 +86,8 @@ internal struct Component: CustomStringConvertible, Equatable, Hashable {
       switch self {
       case .text: return nil
       case .inlineEquation: return "$"
-      case .inlineParenthesesEquation: return "\\("
-      case .texEquation: return "$$"
+      case .inlineParenthesesEquation: return "\\@"
+      case .texEquation: return "@@"
       case .blockEquation: return "\\["
       case .namedEquation: return "\\begin{equation}"
       case .namedNoNumberEquation: return "\\begin{equation*}"
@@ -99,8 +99,8 @@ internal struct Component: CustomStringConvertible, Equatable, Hashable {
       switch self {
       case .text: return nil
       case .inlineEquation: return "$"
-      case .inlineParenthesesEquation: return "\\)"
-      case .texEquation: return "$$"
+      case .inlineParenthesesEquation: return "\\@"
+      case .texEquation: return "@@"
       case .blockEquation: return "\\]"
       case .namedEquation: return "\\end{equation}"
       case .namedNoNumberEquation: return "\\end{equation*}"
