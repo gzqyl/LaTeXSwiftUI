@@ -148,7 +148,7 @@ extension Renderer {
     guard !rendered else {
       return blocks
     }
-    isRendering = true
+    //isRendering = true
     
     let texOptions = TeXInputProcessorOptions(processEscapes: processEscapes, errorMode: errorMode)
     let renderedBlocks = render(
@@ -158,10 +158,10 @@ extension Renderer {
       renderingMode: renderingMode,
       texOptions: texOptions)
     
-    blocks = renderedBlocks
-    isRendering = false
-    rendered = true
-    return blocks
+    //blocks = renderedBlocks
+    // isRendering = false
+    // rendered = true
+    return renderedBlocks
   }
   
   /// Renders the view's components asynchronously.
